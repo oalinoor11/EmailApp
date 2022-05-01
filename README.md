@@ -8,4 +8,5 @@ Hi there, I'm NooR 👋
 I'm a Programmer, Entrepreneur and Passionate Writer!!
 
 follow me on facebook: fb.com/shahed.ofp
+
 subscribe me on youtube: cutt.ly/techtalks
