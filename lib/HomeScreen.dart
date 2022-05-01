@@ -134,16 +134,16 @@ class _HomeScreenState extends State<HomeScreen> {
                             setState(() {
                               loader = true;
                             });
-                            const serviceId = 'service_6gk0cxg';
-                            const templateId = 'template_43noyxj';
-                            const userId = '2EJWOhZLIDqfTnL-H';
+                            const serviceId = 'service_6gk0cxg';    //serviceId from emailjs
+                            const templateId = 'template_43noyxj';  //your templateId from emailjs
+                            const userId = '2EJWOhZLIDqfTnL-H';     //your Public Key from emailjs
                             final url = Uri.parse(
                                 'https://api.emailjs.com/api/v1.0/email/send-form');
                             final response = await http.post(url, body: {
                               'service_id': serviceId,
                               'template_id': templateId,
                               'user_id': userId,
-                              'accessToken': 'A8TCePEyRI9GIfeTuE8cj',
+                              'accessToken': 'A8TCePEyRI9GIfeTuE8cj',   //your Private Key from emailjs
                               'receiver': emailTextEditingController.text,
                               'subject': subjectTextEditingController.text,
                               'message': messageTextEditingController.text,
